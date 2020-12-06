@@ -1,0 +1,13 @@
+<h3>Product Detail</h3>
+ <table border="2">
+    <tr><th>ProductId</th><th>ProductName</th><th>ProductPrice</th><th>ProductQuentity</th></tr>
+    <tr *ngFor="let p of parr"><td>{{p.id}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quentity}}</td>
+       <td><a href="#">Edit</a></td>
+       <td><a href="#">Delete</a></td>
+    </tr>
+</table> <br/>
+<button type="button" name="btn1">Add Product</button>
+<button type="button" name="btn2">Update Product</button>

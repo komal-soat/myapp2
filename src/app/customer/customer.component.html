@@ -1,0 +1,29 @@
+<h3>customer Information!</h3>
+<table border="2">
+    <tr ><th>Customer_name</th>
+        <th>Address</th>
+        <th>Mobile NO</th>
+        <th>Email</th>
+        <th>Product_name</th>
+    </tr>
+<tr *ngFor="let c of carr">
+    <td>{{c.cname}}</td>
+    <td>{{c.cadd}}</td>
+    <td>{{c.cmob}}</td>
+    <td>{{c.email}}</td>
+    <td>{{c.pname}}</td>
+    <td><button type="button" name="btn1" (click)='showCustomerDetail(c)'>Display</button></td>
+</tr>
+</table>
+ <!--<div *ngIf="flag"> -->
+    <!-- <h3>CustomerName:{{selectedCustomer.cname}}</h3> -->
+    <!-- <h3>Customeraddress:{{selectedCustomer.cadd}}</h3> -->
+    <!-- <h3>Customermob:{{selectedCustomer.cmob}}</h3> -->
+    <!-- <h3>Customeremail:{{selectedCustomer.email}}</h3> -->
+    <!-- <h3>Customerpname:{{selectedCustomer.pname}}</h3> -->
+
+
+   
+<!-- </div> -->
+
+ <customerdetail [customer]="selectedCustomer"></customerdetail> 
